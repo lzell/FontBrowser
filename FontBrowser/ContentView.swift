@@ -44,7 +44,7 @@ struct ContentView: View {
 private struct BuiltInFontHeader: View {
     var body: some View {
         ZStack {
-            Color(UIColor.secondarySystemBackground).cornerRadius(3)
+            Color.secondaryBackground.cornerRadius(3)
             VStack {
                 Spacer()
                 Text("For use with Font.custom calls").font(.largeTitle)
@@ -64,7 +64,7 @@ private struct BuiltInFontHeader: View {
 private struct SystemFontHeader: View {
     var body: some View {
         ZStack {
-            Color(UIColor.secondarySystemBackground).cornerRadius(3)
+            Color.secondaryBackground.cornerRadius(3)
             VStack {
                 Spacer()
                 Text("For use with Font.system calls").font(.largeTitle)
@@ -97,4 +97,13 @@ struct ContentView_Previews: PreviewProvider {
      static var previews: some View {
          ContentView()
      }
+}
+
+// https://stackoverflow.com/a/62207329/143447
+public extension Color {
+    #if os(macOS)
+    static let secondaryBackground = Color(NSColor.underPageBackgroundColor)
+    #else
+    static let secondaryBackground = Color(UIColor.secondarySystemBackground)
+    #endif
 }

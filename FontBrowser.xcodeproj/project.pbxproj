@@ -12,6 +12,11 @@
 		0D9317A72A655C0F008588BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9317A62A655C0F008588BE /* Assets.xcassets */; };
 		0D9317AA2A655C0F008588BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9317A92A655C0F008588BE /* Preview Assets.xcassets */; };
 		0D9317B12A655C34008588BE /* FontDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9317B02A655C34008588BE /* FontDB.swift */; };
+		0D9317CE2A65997A008588BE /* FontBrowserMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9317CD2A65997A008588BE /* FontBrowserMacOSApp.swift */; };
+		0D9317D22A65997B008588BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9317D12A65997B008588BE /* Assets.xcassets */; };
+		0D9317D52A65997B008588BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9317D42A65997B008588BE /* Preview Assets.xcassets */; };
+		0D9317DA2A659986008588BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9317A42A655C0E008588BE /* ContentView.swift */; };
+		0D9317DB2A659989008588BE /* FontDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9317B02A655C34008588BE /* FontDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +26,22 @@
 		0D9317A62A655C0F008588BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9317A92A655C0F008588BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D9317B02A655C34008588BE /* FontDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDB.swift; sourceTree = "<group>"; };
+		0D9317CB2A65997A008588BE /* FontBrowserMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontBrowserMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D9317CD2A65997A008588BE /* FontBrowserMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBrowserMacOSApp.swift; sourceTree = "<group>"; };
+		0D9317D12A65997B008588BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D9317D42A65997B008588BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D9317D62A65997B008588BE /* FontBrowserMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FontBrowserMacOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0D93179C2A655C0E008588BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D9317C82A65997A008588BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				0D9317A12A655C0E008588BE /* FontBrowser */,
+				0D9317CC2A65997A008588BE /* FontBrowserMacOS */,
 				0D9317A02A655C0E008588BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0D93179F2A655C0E008588BE /* FontBrowser.app */,
+				0D9317CB2A65997A008588BE /* FontBrowserMacOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +89,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0D9317CC2A65997A008588BE /* FontBrowserMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				0D9317CD2A65997A008588BE /* FontBrowserMacOSApp.swift */,
+				0D9317D12A65997B008588BE /* Assets.xcassets */,
+				0D9317D62A65997B008588BE /* FontBrowserMacOS.entitlements */,
+				0D9317D32A65997B008588BE /* Preview Content */,
+			);
+			path = FontBrowserMacOS;
+			sourceTree = "<group>";
+		};
+		0D9317D32A65997B008588BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D9317D42A65997B008588BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,6 +128,23 @@
 			productReference = 0D93179F2A655C0E008588BE /* FontBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0D9317CA2A65997A008588BE /* FontBrowserMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D9317D92A65997B008588BE /* Build configuration list for PBXNativeTarget "FontBrowserMacOS" */;
+			buildPhases = (
+				0D9317C72A65997A008588BE /* Sources */,
+				0D9317C82A65997A008588BE /* Frameworks */,
+				0D9317C92A65997A008588BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontBrowserMacOS;
+			productName = FontBrowserMacOS;
+			productReference = 0D9317CB2A65997A008588BE /* FontBrowserMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +156,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0D93179E2A655C0E008588BE = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					0D9317CA2A65997A008588BE = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -119,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				0D93179E2A655C0E008588BE /* FontBrowser */,
+				0D9317CA2A65997A008588BE /* FontBrowserMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +192,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D9317C92A65997A008588BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9317D52A65997B008588BE /* Preview Assets.xcassets in Resources */,
+				0D9317D22A65997B008588BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,6 +211,16 @@
 				0D9317A52A655C0E008588BE /* ContentView.swift in Sources */,
 				0D9317A32A655C0E008588BE /* FontBrowserApp.swift in Sources */,
 				0D9317B12A655C34008588BE /* FontDB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D9317C72A65997A008588BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9317DA2A659986008588BE /* ContentView.swift in Sources */,
+				0D9317CE2A65997A008588BE /* FontBrowserMacOSApp.swift in Sources */,
+				0D9317DB2A659989008588BE /* FontDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +399,64 @@
 			};
 			name = Release;
 		};
+		0D9317D72A65997B008588BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FontBrowserMacOS/FontBrowserMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FontBrowserMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = QFZPA4L9F7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louzell.FontBrowserMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0D9317D82A65997B008588BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FontBrowserMacOS/FontBrowserMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FontBrowserMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = QFZPA4L9F7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louzell.FontBrowserMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +474,15 @@
 			buildConfigurations = (
 				0D9317AE2A655C0F008588BE /* Debug */,
 				0D9317AF2A655C0F008588BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D9317D92A65997B008588BE /* Build configuration list for PBXNativeTarget "FontBrowserMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D9317D72A65997B008588BE /* Debug */,
+				0D9317D82A65997B008588BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
